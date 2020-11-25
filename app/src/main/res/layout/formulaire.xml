@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3BCEF">
+    android:background="#B3BCEF"
+    tools:ignore="MissingConstraints">
 
     <Spinner
         android:id="@+id/spinner2"
@@ -161,7 +162,8 @@
         android:textColor="#fff"
         android:visibility="visible"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="667dp" />
+        tools:layout_editor_absoluteY="667dp"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView5"

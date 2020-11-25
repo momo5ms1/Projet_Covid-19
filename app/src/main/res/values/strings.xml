@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CoviMedsf</string>
+    <string name="first_name">First Name</string>
+    <string name="Last_name">Last Name</string>
+    <string name="normal">normal</string>
+    <string name="chronic">chronic</string>
+    <string name="pregnant">pregnant</string>
+    <string name="age">enter your age</string>
+    <string name="address">adreese</string>
+    <string name="message">message</string>
+    <string name="sumbit">submit</string>
+
 </resources>
