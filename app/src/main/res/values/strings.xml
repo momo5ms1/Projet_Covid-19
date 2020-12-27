@@ -9,5 +9,7 @@
     <string name="address">adreese</string>
     <string name="message">message</string>
     <string name="sumbit">submit</string>
+    <string name="msg">Take Care of your self</string>
+    <string name="msg1">"We will call you "</string>
 
 </resources>
