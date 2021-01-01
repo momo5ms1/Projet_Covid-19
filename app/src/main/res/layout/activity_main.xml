@@ -20,6 +20,20 @@
             android:layout_height="150dp"
             app:srcCompat="@drawable/logo" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="170dp"
+            android:paddingTop="550dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Register"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -30,7 +44,7 @@
         android:paddingTop="330dp">
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/user"
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -61,47 +75,23 @@
     </LinearLayout>
 
     <LinearLayout
+
+        android:id="@+id/med"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingLeft="60dp"
         android:paddingTop="450dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            app:cardBackgroundColor="@color/colorAccent"
-            app:cardCornerRadius="25dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#E91E63">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="Login"
-                    android:textColor="#fff"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/lo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#fff" />
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:paddingLeft="170dp"
-        android:paddingTop="550dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Register"
-            android:textSize="20sp"></TextView>
-
-    </LinearLayout>
 </RelativeLayout>

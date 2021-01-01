@@ -7,153 +7,174 @@
     android:background="#B3BCEF"
     tools:ignore="MissingConstraints">
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_dropdown_light_frame"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="378dp" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
         android:text="Register"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="@+id/fname"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/fname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
         android:drawableLeft="@drawable/ic_action_personne"
         android:ems="10"
+        android:hint="First Name"
         android:inputType="textPersonName"
-        android:text="First Name"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="101dp" />
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintStart_toStartOf="@+id/user" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
         android:drawableLeft="@drawable/ic_action_personne"
         android:ems="10"
+        android:hint="Last Name"
         android:inputType="textPersonName"
-        android:text="Last Name"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="167dp" />
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintStart_toStartOf="@+id/phone" />
+
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
         android:drawableLeft="@drawable/ic_action_telephone"
         android:ems="10"
+        android:hint="Phone"
         android:inputType="phone"
-        android:text="Phone"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="231dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Men"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btwomen"
+        app:layout_constraintEnd_toEndOf="@+id/btmen"
+        app:layout_constraintStart_toEndOf="@+id/btmen" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="17dp"
         android:text="Gender"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5" />
 
     <RadioButton
-        android:id="@+id/radioButton4"
+        android:id="@+id/btmen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Women"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="290dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="6dp"
+        android:text="Men"
+        app:layout_constraintBottom_toTopOf="@+id/gouv"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="200dp"
+    <RadioButton
+        android:id="@+id/btwomen"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_dropdown_light_frame"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="339dp" />
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="10dp"
+        android:text="Women"
+        app:layout_constraintBottom_toTopOf="@+id/gouv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btmen" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="1dp"
         android:drawableLeft="@drawable/ic_action_locationcity"
         android:text="Region"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintEnd_toStartOf="@+id/region"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/pharmaci"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="7dp"
         android:text="Pharmacist"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintStart_toStartOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/region" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/patient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Patient "
+        android:layout_marginStart="97dp"
 
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="427dp" />
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="97dp"
+        android:text="Patient "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btmen"
+        app:layout_constraintTop_toBottomOf="@+id/region" />
+
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="51dp"
         android:drawableLeft="@drawable/ic_action_email"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        android:text="Email"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="477dp" />
+        app:layout_constraintEnd_toEndOf="@+id/patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharmaci" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:drawableLeft="@drawable/ic_action_passwords"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPersonName"
-        android:text="Password"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="537dp" />
+        app:layout_constraintStart_toStartOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/cpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/ic_action_confpsword"
         android:ems="10"
+        android:hint="Confirm Password"
         android:inputType="textPersonName"
-        android:text="Confirm Password"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="602dp" />
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
         android:background="@color/colorAccent"
         android:elevation="4dp"
         android:paddingLeft="70dp"
@@ -161,19 +182,59 @@
         android:text="Submit"
         android:textColor="#fff"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="667dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cpass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
         android:drawableLeft="@drawable/ic_action_location"
         android:text="Gouvernorat"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="339dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/gouv"
+        app:layout_constraintEnd_toStartOf="@+id/gouv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/gouv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="Gouvernorat"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Region"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/login"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="669dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
